@@ -105,7 +105,7 @@ class Tool(ToolManifest):
         _desclinks = []
         for _results in _output["results"]:
             if len(_desclinks) <= 10:
-                _desclinks.append(f"- [{_results['title'].replace("/", " ")}]({_results['url']})")
+                _desclinks.append(f"- [{_results['title'].replace('/', ' ')}]({_results['url']})")
             else:
                 _desclinks.append("...and more results")
                 break
